@@ -1,10 +1,11 @@
 package Modelo;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
 import java.util.Scanner;
 
 public class Diccionario {
-    private Map<String, Map<String, String>> diccionario;
+    private HashMap<String, ArrayList<String>> diccionario;
 
     public Diccionario() {
         diccionario = new HashMap<>();
@@ -12,29 +13,48 @@ public class Diccionario {
     }
 
     private void inicializarDiccionario() {
-        Map<String, String> traduccionesIngles = new HashMap<>();
-        traduccionesIngles.put("hola", "Hello");
-        traduccionesIngles.put("adiós", "Goodbye");
-        traduccionesIngles.put("gato", "cat");
-        traduccionesIngles.put("perro", "Dog");
-        traduccionesIngles.put("perro", "Dog");
-        traduccionesIngles.put("perro", "Dog");
+        ArrayList<String> traduccionesIngles = new ArrayList<>();
+        traduccionesIngles.add("hola");
+        traduccionesIngles.add("Hello");
+        traduccionesIngles.add("adiós");
+        traduccionesIngles.add("Goodbye");
+        traduccionesIngles.add("gato");
+        traduccionesIngles.add("cat");
+        traduccionesIngles.add("perro");
+        traduccionesIngles.add("Dog");
+        traduccionesIngles.add("raton");
+        traduccionesIngles.add("Mouse");
+        traduccionesIngles.add("toro");
+        traduccionesIngles.add("Bull");
 
-        Map<String, String> traduccionesKichwa = new HashMap<>();
-        traduccionesKichwa.put("hola", "Imanalla");
-        traduccionesKichwa.put("adiós", "Kayakama");
-        traduccionesKichwa.put("perro", "Ashku");
-        traduccionesKichwa.put("gato", "Mishi");
-        
+        ArrayList<String> traduccionesKichwa = new ArrayList<>();
+        traduccionesKichwa.add("hola");
+        traduccionesKichwa.add("Imanalla");
+        traduccionesKichwa.add("adiós");
+        traduccionesKichwa.add("Kayakama");
+        traduccionesKichwa.add("perro");
+        traduccionesKichwa.add("Ashku");
+        traduccionesKichwa.add("gato");
+        traduccionesKichwa.add("Mishi");
+        traduccionesKichwa.add("raton");
+        traduccionesKichwa.add("Ukucha");
+        traduccionesKichwa.add("toro");
+        traduccionesKichwa.add("Wagra");
+
         diccionario.put("inglés", traduccionesIngles);
         diccionario.put("kichwa", traduccionesKichwa);
     }
 
     public String traducir(String idioma, String palabra) {
-        Map<String, String> traducciones = diccionario.get(idioma.toLowerCase()); 
+        ArrayList<String> traducciones = diccionario.get(idioma.toLowerCase());
         if (traducciones != null) {
-            String palabraLower = palabra.toLowerCase(); 
-            return traducciones.getOrDefault(palabraLower, "Traducción no encontrada para este idioma");
+            for (int i = 0; i < traducciones.size(); i += 2) {
+                if (traducciones.get(i).equalsIgnoreCase(palabra)) {
+                    return "Significado de '" + palabra + "' en " + idioma + ": " +
+                            traducciones.get(i + 1);
+                }
+            }
+            return "Traducción no encontrada para este idioma";
         }
         return "Idioma no encontrado en el diccionario";
     }
@@ -47,11 +67,11 @@ public class Diccionario {
         System.out.println("Ingrese una palabra para obtener su traducción:");
         String palabra = scanner.nextLine();
 
-        String significadoIngles = miDiccionario.traducir("Inglés", palabra);
-        String significadoKichwa = miDiccionario.traducir("Kichwa", palabra);
+        String significadoIngles = miDiccionario.traducir("inglés", palabra);
+        String significadoKichwa = miDiccionario.traducir("kichwa", palabra);
 
-        System.out.println("Significado de '" + palabra + "' en Inglés: " + significadoIngles);
-        System.out.println("Significado de '" + palabra + "' en Kichwa: " + significadoKichwa);
+        System.out.println(significadoIngles);
+        System.out.println(significadoKichwa);
 
         scanner.close();
     }
