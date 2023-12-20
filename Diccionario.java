@@ -1,4 +1,5 @@
 package Modelo;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
@@ -25,6 +26,8 @@ public class Diccionario {
         traduccionesIngles.add("Mouse");
         traduccionesIngles.add("toro");
         traduccionesIngles.add("Bull");
+        traduccionesIngles.add("agua");
+        traduccionesIngles.add("water");
 
         ArrayList<String> traduccionesKichwa = new ArrayList<>();
         traduccionesKichwa.add("hola");
@@ -39,6 +42,8 @@ public class Diccionario {
         traduccionesKichwa.add("Ukucha");
         traduccionesKichwa.add("toro");
         traduccionesKichwa.add("Wagra");
+        traduccionesKichwa.add("agua");
+        traduccionesKichwa.add("Yaku");
 
         diccionario.put("inglés", traduccionesIngles);
         diccionario.put("kichwa", traduccionesKichwa);
