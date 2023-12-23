@@ -27,6 +27,8 @@ public class Diccionario {
         traduccionesIngles.add("Bull");
         traduccionesIngles.add("agua");
         traduccionesIngles.add("water");
+        traduccionesIngles.add("viento");
+        traduccionesIngles.add("wind");
 
         ArrayList<String> traduccionesKichwa = new ArrayList<>();
         traduccionesKichwa.add("hola");
@@ -43,6 +45,8 @@ public class Diccionario {
         traduccionesKichwa.add("Wagra");
         traduccionesKichwa.add("agua");
         traduccionesKichwa.add("Yaku");
+        traduccionesKichwa.add("viento");
+        traduccionesKichwa.add("Wayra");
 
         diccionario.put("inglés", traduccionesIngles);
         diccionario.put("kichwa", traduccionesKichwa);
@@ -74,7 +78,7 @@ public class Diccionario {
         String significadoKichwa = miDiccionario.traducir("kichwa", palabra);
 
         System.out.println(significadoIngles);
-        System.out.println(significadoKichwa);
+        System.out.println(significadoKichwa); 
 
         scanner.close();
     }
