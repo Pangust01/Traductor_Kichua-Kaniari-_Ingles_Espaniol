@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Diccionario {
+public class Traductor {
     private HashMap<String, ArrayList<String>> diccionario;
 
-    public Diccionario() {
+    public Traductor() {
         diccionario = new HashMap<>();
         inicializarDiccionario();
     }
@@ -129,7 +129,7 @@ public class Diccionario {
     }
 
     public static void main(String[] args) {
-        Diccionario miDiccionario = new Diccionario();
+        Traductor miDiccionario = new Traductor();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Idiomas disponibles: inglés, kichwa");
