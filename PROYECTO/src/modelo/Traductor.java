@@ -92,7 +92,7 @@ public class Traductor {
         traduccionesKichwa.add("noche");
         traduccionesKichwa.add("Tuta");
         traduccionesKichwa.add("lana");
-        traduccionesKichwa.add("Miglla");
+        traduccionesKichwa.add("Miklla");
         traduccionesKichwa.add("quemar");
         traduccionesKichwa.add("Rupachiy");
         traduccionesKichwa.add("fuego");
