@@ -61,6 +61,8 @@ public class Traductor {
         traduccionesIngles.add("I");
         traduccionesIngles.add("ustedes");
         traduccionesIngles.add("You");
+        traduccionesIngles.add("teclado");
+        traduccionesIngles.add("Keyboard");
 
         ArrayList<String> traduccionesKichwa = new ArrayList<>();
         traduccionesKichwa.add("hola");
