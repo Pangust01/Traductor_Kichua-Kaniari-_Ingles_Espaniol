@@ -38,7 +38,7 @@ public class Traductor {
         traduccionesIngles.add("dia");
         traduccionesIngles.add("Day");
         traduccionesIngles.add("tarde");
-        traduccionesIngles.add("Everning");
+        traduccionesIngles.add("Evening");
         traduccionesIngles.add("noche");
         traduccionesIngles.add("Night");
         traduccionesIngles.add("lana");
@@ -63,6 +63,10 @@ public class Traductor {
         traduccionesIngles.add("You");
         traduccionesIngles.add("teclado");
         traduccionesIngles.add("Keyboard");
+        traduccionesIngles.add("matrimonio");
+        traduccionesIngles.add("Marriage");
+
+
 
         ArrayList<String> traduccionesKichwa = new ArrayList<>();
         traduccionesKichwa.add("hola");
