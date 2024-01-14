@@ -1,4 +1,5 @@
 package modelo;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -12,126 +13,113 @@ public class Traductor {
     }
 
     private void inicializarDiccionario() {
-        ArrayList<String> traduccionesIngles = new ArrayList<>();
-        traduccionesIngles.add("hola");
-        traduccionesIngles.add("Hello");
-        traduccionesIngles.add("adiós");
-        traduccionesIngles.add("Goodbye");
-        traduccionesIngles.add("gato");
-        traduccionesIngles.add("cat");
-        traduccionesIngles.add("perro");
-        traduccionesIngles.add("Dog");
-        traduccionesIngles.add("raton");
-        traduccionesIngles.add("Mouse");
-        traduccionesIngles.add("toro");
-        traduccionesIngles.add("Bull");
-        traduccionesIngles.add("agua");
-        traduccionesIngles.add("Water");
-        traduccionesIngles.add("viento");
-        traduccionesIngles.add("Wind");
-        traduccionesIngles.add("buenos dias");
-        traduccionesIngles.add("Good morning");
-        traduccionesIngles.add("buenas tardes");
-        traduccionesIngles.add("Good afternoon");
-        traduccionesIngles.add("piso");
-        traduccionesIngles.add("Floor");
-        traduccionesIngles.add("dia");
-        traduccionesIngles.add("Day");
-        traduccionesIngles.add("tarde");
-        traduccionesIngles.add("Evening");
-        traduccionesIngles.add("noche");
-        traduccionesIngles.add("Night");
-        traduccionesIngles.add("lana");
-        traduccionesIngles.add("Wool");
-        traduccionesIngles.add("quemar");
-        traduccionesIngles.add("Burn");
-        traduccionesIngles.add("fuego");
-        traduccionesIngles.add("Fire");
-        traduccionesIngles.add("calentar");
-        traduccionesIngles.add("heat");
-        traduccionesIngles.add("caminar");
-        traduccionesIngles.add("Walk");
-        traduccionesIngles.add("ver");
-        traduccionesIngles.add("Watch");
-        traduccionesIngles.add("olvidar");
-        traduccionesIngles.add("Forget");
-        traduccionesIngles.add("soñar");
-        traduccionesIngles.add("Dream");
-        traduccionesIngles.add("yo");
-        traduccionesIngles.add("I");
-        traduccionesIngles.add("ustedes");
-        traduccionesIngles.add("You");
-        traduccionesIngles.add("teclado");
-        traduccionesIngles.add("Keyboard");
-        traduccionesIngles.add("matrimonio");
-        traduccionesIngles.add("Marriage");
+        ArrayList<String> traducciones = new ArrayList<>();
+        traducciones.add("hola");
+        traducciones.add("Hello");
+        traducciones.add("Imanalla");
+        traducciones.add("adiós");
+        traducciones.add("Goodbye");
+        traducciones.add("Kayakama");
+        traducciones.add("perro");
+        traducciones.add("Dog");
+        traducciones.add("Ashku");
+        traducciones.add("gato");
+        traducciones.add("Cat");
+        traducciones.add("Mishi");
+        traducciones.add("raton");
+        traducciones.add("Mouse");
+        traducciones.add("Ukucha");
+        traducciones.add("toro");
+        traducciones.add("Bull");
+        traducciones.add("Wagra");
+        traducciones.add("agua");
+        traducciones.add("Water");
+        traducciones.add("Yaku");
+        traducciones.add("viento");
+        traducciones.add("Wind");
+        traducciones.add("Wayra");
+        traducciones.add("buenos dias");
+        traducciones.add("Good morning");
+        traducciones.add("Alli punlla");
+        traducciones.add("buenas tardes");
+        traducciones.add("Good afternoon");
+        traducciones.add("Alli Chishi");
+        traducciones.add("piso");
+        traducciones.add("Floor");
+        traducciones.add("Pampa");
+        traducciones.add("dia");
+        traducciones.add("Day");
+        traducciones.add("Punlla");
+        traducciones.add("tarde");
+        traducciones.add("Evening");
+        traducciones.add("Chishi");
+        traducciones.add("noche");
+        traducciones.add("Night");
+        traducciones.add("Tuta");
+        traducciones.add("lana");
+        traducciones.add("Wool");
+        traducciones.add("Miklla");
+        traducciones.add("quemar");
+        traducciones.add("Burn");
+        traducciones.add("Rupachiy");
+        traducciones.add("fuego");
+        traducciones.add("Fire");
+        traducciones.add("Nina");
+        traducciones.add("calentar");
+        traducciones.add("heat");
+        traducciones.add("Kunuchiy");
+        traducciones.add("caminar");
+        traducciones.add("Walk");
+        traducciones.add("Purik");
+        traducciones.add("ver");
+        traducciones.add("Watch");
+        traducciones.add("Rikuy");
+        traducciones.add("olvidar");
+        traducciones.add("Forget");
+        traducciones.add("Kungarina");
+        traducciones.add("soñar");
+        traducciones.add("Dream");
+        traducciones.add("Muskuna");
+        traducciones.add("yo");
+        traducciones.add("I");
+        traducciones.add("Ñuka");
+        traducciones.add("ustedes");
+        traducciones.add("You");
+        traducciones.add("Kankuna");
+        traducciones.add("teclado");
+        traducciones.add("Keyboard");
+        traducciones.add("matrimonio");
+        traducciones.add("Marriage");
+        traducciones.add("Kallarana");
 
-
-
-        ArrayList<String> traduccionesKichwa = new ArrayList<>();
-        traduccionesKichwa.add("hola");
-        traduccionesKichwa.add("Imanalla");
-        traduccionesKichwa.add("adiós");
-        traduccionesKichwa.add("Kayakama");
-        traduccionesKichwa.add("perro");
-        traduccionesKichwa.add("Ashku");
-        traduccionesKichwa.add("gato");
-        traduccionesKichwa.add("Mishi");
-        traduccionesKichwa.add("raton");
-        traduccionesKichwa.add("Ukucha");
-        traduccionesKichwa.add("toro");
-        traduccionesKichwa.add("Wagra");
-        traduccionesKichwa.add("agua");
-        traduccionesKichwa.add("Yaku");
-        traduccionesKichwa.add("viento");
-        traduccionesKichwa.add("Wayra");
-        traduccionesKichwa.add("buenos dias");
-        traduccionesKichwa.add("Alli punlla");
-        traduccionesKichwa.add("buenas tardes");
-        traduccionesKichwa.add("Alli chisi");
-        traduccionesKichwa.add("piso");
-        traduccionesKichwa.add("Pampa");
-        traduccionesKichwa.add("dia");
-        traduccionesKichwa.add("Punlla");
-        traduccionesKichwa.add("tarde");
-        traduccionesKichwa.add("Chisi");
-        traduccionesKichwa.add("noche");
-        traduccionesKichwa.add("Tuta");
-        traduccionesKichwa.add("lana");
-        traduccionesKichwa.add("Miklla");
-        traduccionesKichwa.add("quemar");
-        traduccionesKichwa.add("Rupachiy");
-        traduccionesKichwa.add("fuego");
-        traduccionesKichwa.add("Nina");
-        traduccionesKichwa.add("calentar");
-        traduccionesKichwa.add("Kunuchy");
-        traduccionesKichwa.add("caminar");
-        traduccionesKichwa.add("Purik");
-        traduccionesKichwa.add("ver");
-        traduccionesKichwa.add("Rikuy");
-        traduccionesKichwa.add("soñar");
-        traduccionesKichwa.add("Muskuy");
-        traduccionesKichwa.add("yo");
-        traduccionesKichwa.add("Ñuka");
-        traduccionesKichwa.add("ustedes");
-        traduccionesKichwa.add("Kinkimba");
-
-        diccionario.put("inglés", traduccionesIngles);
-        diccionario.put("kichwa", traduccionesKichwa);
+        diccionario.put("palabras", traducciones);
     }
 
     public String traducir(String idioma, String palabra) {
-        ArrayList<String> traducciones = diccionario.get(idioma.toLowerCase());
+        ArrayList<String> traducciones = diccionario.get("palabras");
         if (traducciones != null) {
-            for (int i = 0; i < traducciones.size(); i += 2) {
-                if (traducciones.get(i).equalsIgnoreCase(palabra)) {
-                    return "Significado de '" + palabra + "' en " + idioma + ": " +
-                            traducciones.get(i + 1);
-                }
+            int index = traducciones.indexOf(palabra.toLowerCase());
+            if (index != -1) {
+                int indexIdioma = (idioma.equalsIgnoreCase("inglés")) ? 1 : 2;
+                return "Significado de '" + palabra + "' en " + idioma + ": " +
+                        traducciones.get(index + indexIdioma);
+            } else {
+                return "Traducción no encontrada para esta palabra";
             }
-            return "Traducción no encontrada para este idioma";
         }
-        return "Idioma no encontrado en el diccionario";
+        return "Error al obtener las traducciones";
+    }
+
+    public String traducirOracion(String idioma, String oracion) {
+        StringBuilder resultado = new StringBuilder("Traducción de la oración en " + idioma + ":\n");
+        String[] palabras = oracion.split("\\s+");
+
+        for (String palabra : palabras) {
+            String traduccion = traducir(idioma, palabra);
+            resultado.append(traduccion).append("\n");
+        }
+
+        return resultado.toString();
     }
 
     public static void main(String[] args) {
@@ -139,14 +127,18 @@ public class Traductor {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Idiomas disponibles: inglés, kichwa");
-        System.out.println("Ingrese una palabra para obtener su traducción:");
-        String palabra = scanner.nextLine();
+        System.out.println("Seleccione un idioma:");
+        String idioma = scanner.nextLine().toLowerCase();
 
-        String significadoIngles = miDiccionario.traducir("inglés", palabra);
-        String significadoKichwa = miDiccionario.traducir("kichwa", palabra);
+        System.out.println("Ingrese una palabra o una oración para obtener su traducción:");
+        String entrada = scanner.nextLine();
 
-        System.out.println(significadoIngles);
-        System.out.println(significadoKichwa); 
+        if (entrada.contains(" ")) {
+            System.out.println(miDiccionario.traducirOracion(idioma, entrada));
+        } else {
+            String significado = miDiccionario.traducir(idioma, entrada);
+            System.out.println(significado);
+        }
 
         scanner.close();
     }
