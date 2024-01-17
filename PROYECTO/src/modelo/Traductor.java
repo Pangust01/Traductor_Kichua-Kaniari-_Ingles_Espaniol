@@ -88,6 +88,7 @@ public class Traductor {
         traducciones.add("Kankuna");
         traducciones.add("teclado");
         traducciones.add("Keyboard");
+        traducciones.add("No existe esta palabra");
         traducciones.add("matrimonio");
         traducciones.add("Marriage");
         traducciones.add("Kallarana");
@@ -95,51 +96,55 @@ public class Traductor {
         diccionario.put("palabras", traducciones);
     }
 
-    public String traducir(String idioma, String palabra) {
-        ArrayList<String> traducciones = diccionario.get("palabras");
-        if (traducciones != null) {
-            int index = traducciones.indexOf(palabra.toLowerCase());
-            if (index != -1) {
-                int indexIdioma = (idioma.equalsIgnoreCase("inglés")) ? 1 : 2;
-                return "Significado de '" + palabra + "' en " + idioma + ": " +
-                        traducciones.get(index + indexIdioma);
-            } else {
-                return "Traducción no encontrada para esta palabra";
-            }
-        }
-        return "Error al obtener las traducciones";
-    }
-
     public String traducirOracion(String idioma, String oracion) {
         StringBuilder resultado = new StringBuilder("Traducción de la oración en " + idioma + ":\n");
         String[] palabras = oracion.split("\\s+");
 
         for (String palabra : palabras) {
-            String traduccion = traducir(idioma, palabra);
+            String traduccion = traducirPalabra(idioma, palabra);
             resultado.append(traduccion).append("\n");
         }
 
         return resultado.toString();
     }
 
+    private String traducirPalabra(String idioma, String palabra) {
+        ArrayList<String> traducciones = diccionario.get("palabras");
+        int indicePalabra = traducciones.indexOf(palabra.toLowerCase());
+
+        if (indicePalabra != -1) {
+            int indiceTraduccion = idioma.equals("ingles") ? indicePalabra + 1 : indicePalabra + 2;
+            return traducciones.get(indiceTraduccion);
+        } else {
+            return "Traducción no encontrada para la palabra: " + palabra;
+        }
+    }
+
     public static void main(String[] args) {
         Traductor miDiccionario = new Traductor();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Idiomas disponibles: inglés, kichwa");
-        System.out.println("Seleccione un idioma:");
-        String idioma = scanner.nextLine().toLowerCase();
+        try {
+            System.out.println("Idiomas disponibles: inglés, kichwa");
+            System.out.println("Seleccione un idioma:");
+            String idioma = scanner.nextLine().toLowerCase();
 
-        System.out.println("Ingrese una palabra o una oración para obtener su traducción:");
-        String entrada = scanner.nextLine();
+            if (!idioma.equals("ingles") && !idioma.equals("kichwa")) {
+                System.out.println("Idioma no válido. Saliendo del programa.");
+                return;
+            }
 
-        if (entrada.contains(" ")) {
-            System.out.println(miDiccionario.traducirOracion(idioma, entrada));
-        } else {
-            String significado = miDiccionario.traducir(idioma, entrada);
-            System.out.println(significado);
+            System.out.println("Ingrese una palabra o una oración para obtener su traducción:");
+            String entrada = scanner.nextLine();
+
+            if (entrada.contains(" ")) {
+                System.out.println(miDiccionario.traducirOracion(idioma, entrada));
+            } else {
+                String significado = miDiccionario.traducirPalabra(idioma, entrada);
+                System.out.println(significado);
+            }
+        } finally {
+            scanner.close();
         }
-
-        scanner.close();
     }
 }
