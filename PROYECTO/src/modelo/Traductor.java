@@ -102,7 +102,7 @@ public class Traductor {
 
         for (String palabra : palabras) {
             String traduccion = traducirPalabra(idioma, palabra);
-            resultado.append(traduccion).append("\n");
+            resultado.append(traduccion).append("");
         }
 
         return resultado.toString();
