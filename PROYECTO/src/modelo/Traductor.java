@@ -140,7 +140,7 @@ public class Traductor {
             System.out.println("Ingrese una palabra o una oración para obtener su traducción:");
             String entrada = scanner.nextLine();
 
-            if (entrada.contains(" ")) { // Si la entrada contiene espacios en una oracion
+            if (entrada.contains(" ")) { // Si la entrada contiene espacios es una oracion
                 System.out.println(miDiccionario.traducirOracion(idioma, entrada));
             } else {
                 String significado = miDiccionario.traducirPalabra(idioma, entrada);
