@@ -109,15 +109,16 @@ public class Traductor {
         return resultado.toString();
     }
 
-    private String traducirPalabra(String idioma, String palabra) {
-        ArrayList<String> traducciones = diccionario.get("palabras");
-        int indicePalabra = traducciones.indexOf(palabra.toLowerCase());
+    private String traducirPalabra(String idioma, String palabra) { // obtiene la lista de traducciones
+        ArrayList<String> traducciones = diccionario.get("palabras"); // Busca el indice de la palbra en la lista
+        int indicePalabra = traducciones.indexOf(palabra.toLowerCase());// Comprueba si la palabra fue encontrada
 
-        if (indicePalabra != -1) {
-            int indiceTraduccion = idioma.equals("ingles") ? indicePalabra + 1 : indicePalabra + 2;
+        if (indicePalabra != -1) { // Determina el indice de la traduccion seleccionada
+            int indiceTraduccion = idioma.equals("ingles") ? indicePalabra + 1 : indicePalabra + 2; // Devueleve la
+                                                                                                    // traduccion
             return traducciones.get(indiceTraduccion);
         } else {
-            return "Traducción no encontrada para la palabra: " + palabra;
+            return "Traducción no encontrada para la palabra: " + palabra; // retoma al inicio
         }
     }
 
@@ -130,7 +131,8 @@ public class Traductor {
             System.out.println("Seleccione un idioma:");
             String idioma = scanner.nextLine().toLowerCase();
 
-            if (!idioma.equals("ingles") && !idioma.equals("kichwa")) {
+            if (!idioma.equals("ingles") && !idioma.equals("kichwa")) { // verifica si la variable idioma no es igual a
+                                                                        // la cadena ingles
                 System.out.println("Idioma no válido. Saliendo del programa.");
                 return;
             }
