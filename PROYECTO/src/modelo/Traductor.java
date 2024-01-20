@@ -92,6 +92,65 @@ public class Traductor {
         traducciones.add("matrimonio");
         traducciones.add("Marriage");
         traducciones.add("Kallarana");
+        traducciones.add("dulce");
+        traducciones.add("sweet");
+        traducciones.add("Mishki");
+        traducciones.add("sol");
+        traducciones.add("sun");
+        traducciones.add("inti");
+        traducciones.add("luna");
+        traducciones.add("Moon");
+        traducciones.add("Killa");
+        traducciones.add("vamonos");
+        traducciones.add("Let's go");
+        traducciones.add("Jaku");
+        traducciones.add("venir");
+        traducciones.add("Come");
+        traducciones.add("Shamuy");
+        traducciones.add("neblina");
+        traducciones.add("Fog");
+        traducciones.add("Puyo");
+        traducciones.add("huevo");
+        traducciones.add("Egg");
+        traducciones.add("Ruro");
+        traducciones.add("duro");
+        traducciones.add("hard");
+        traducciones.add("Shinchy");
+        traducciones.add("frio");
+        traducciones.add("cold");
+        traducciones.add("Chiry");
+        traducciones.add("caliente");
+        traducciones.add("Hot");
+        traducciones.add("lodo");
+        traducciones.add("sludge");
+        traducciones.add("Turu");
+        traducciones.add("sapo");
+        traducciones.add("Joad");
+        traducciones.add("Jamp'atu");
+        traducciones.add("lluvia");
+        traducciones.add("rain");
+        traducciones.add("Tamia");
+        traducciones.add("nevado");
+        traducciones.add("Snowy");
+        traducciones.add("Cazshka");
+        traducciones.add("montaña");
+        traducciones.add("mountain");
+        traducciones.add("Urku");
+        traducciones.add("gallina");
+        traducciones.add("hen");
+        traducciones.add("Guashpa");
+        traducciones.add("Pollo");
+        traducciones.add("chicken");
+        traducciones.add("Chuchi");
+        traducciones.add("caballo");
+        traducciones.add("horse");
+        traducciones.add("Apyu");
+        traducciones.add("zorro");
+        traducciones.add("Fox");
+        traducciones.add("Atuk");
+        traducciones.add("leña");
+        traducciones.add("Firewood");
+        traducciones.add("Yanta");
 
         diccionario.put("palabras", traducciones); // Traduce la oracion
     }
@@ -103,7 +162,7 @@ public class Traductor {
 
         for (String palabra : palabras) {
             String traduccion = traducirPalabra(idioma, palabra); // Instacia de la clase
-            resultado.append(traduccion).append("");
+            resultado.append(traduccion).append(" ");
         }
 
         return resultado.toString();
@@ -137,14 +196,14 @@ public class Traductor {
                 return;
             }
 
-            System.out.println("Ingrese una palabra o una oración para obtener su traducción:");
+            System.out.println("Ingrese una palabra o una oración para obtener su traducción: ");
             String entrada = scanner.nextLine();
 
             if (entrada.contains(" ")) { // Si la entrada contiene espacios es una oracion
                 System.out.println(miDiccionario.traducirOracion(idioma, entrada));
             } else {
                 String significado = miDiccionario.traducirPalabra(idioma, entrada);
-                System.out.println(significado); // sinno contiene espacios es una palabra
+                System.out.println("Su traduccion es: " + significado); // sinno contiene espacios es una palabra
             }
         } finally {
             scanner.close();
