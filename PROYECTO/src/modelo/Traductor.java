@@ -7,12 +7,12 @@ import java.util.Scanner;
 public class Traductor {
     private HashMap<String, ArrayList<String>> diccionario;
 
-    public Traductor() {
+    public Traductor() { // Contruimos la clase traductor
         diccionario = new HashMap<>();
         inicializarDiccionario();
     }
 
-    private void inicializarDiccionario() {
+    private void inicializarDiccionario() { // Inicalizamos el diccionario con palabras en español y kichwa
         ArrayList<String> traducciones = new ArrayList<>();
         traducciones.add("hola");
         traducciones.add("Hello");
@@ -93,15 +93,16 @@ public class Traductor {
         traducciones.add("Marriage");
         traducciones.add("Kallarana");
 
-        diccionario.put("palabras", traducciones);
+        diccionario.put("palabras", traducciones); // Traduce la oracion
     }
 
+    // Traduce la oracion
     public String traducirOracion(String idioma, String oracion) {
         StringBuilder resultado = new StringBuilder("Traducción de la oración en " + idioma + ":\n");
         String[] palabras = oracion.split("\\s+");
 
         for (String palabra : palabras) {
-            String traduccion = traducirPalabra(idioma, palabra);
+            String traduccion = traducirPalabra(idioma, palabra); // Instacia de la clase
             resultado.append(traduccion).append("");
         }
 
@@ -137,11 +138,11 @@ public class Traductor {
             System.out.println("Ingrese una palabra o una oración para obtener su traducción:");
             String entrada = scanner.nextLine();
 
-            if (entrada.contains(" ")) {
+            if (entrada.contains(" ")) { // Si la entrada contiene espacios en una oracion
                 System.out.println(miDiccionario.traducirOracion(idioma, entrada));
             } else {
                 String significado = miDiccionario.traducirPalabra(idioma, entrada);
-                System.out.println(significado);
+                System.out.println(significado); // sinno contiene espacios es una palabra
             }
         } finally {
             scanner.close();
