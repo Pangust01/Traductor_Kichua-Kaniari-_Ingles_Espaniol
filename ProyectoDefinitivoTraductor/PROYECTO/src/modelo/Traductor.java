@@ -161,6 +161,10 @@ public class Traductor {
         traducciones.add("leńa");
         traducciones.add("Firewood");
         traducciones.add("Yanta");
+        traducciones.add("luz");
+        traducciones.add("Ligth");
+        traducciones.add("Achik");
+       
 
         diccionario.put("palabras", traducciones); // Traduce la oracion
     }
