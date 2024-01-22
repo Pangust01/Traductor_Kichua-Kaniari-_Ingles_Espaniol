@@ -28,7 +28,7 @@ public class main {
 
     public void cargarLista() {
         Usuarios.add(new Usuario(1, "Pangust01", "danito54"));
-        Usuarios.add(new Usuario(2, "admin", "admin"));
+        Usuarios.add(new Usuario(2, "Jordan", "Jordan173"));
         Usuarios.add(new Usuario(3, "Alexis", "alexis554"));
 
     }
