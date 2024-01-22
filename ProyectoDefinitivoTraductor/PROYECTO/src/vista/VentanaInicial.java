@@ -76,7 +76,7 @@ public class VentanaInicial extends javax.swing.JFrame {
 
         jSeparator1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
 
-        txtDatos.setText("Ingrese el idioma...");
+        txtDatos.setText("");
         txtDatos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtDatosActionPerformed(evt);
@@ -103,7 +103,7 @@ public class VentanaInicial extends javax.swing.JFrame {
             }
         });
 
-        txtTraducir.setText("Ingrese la palabra...");
+        txtTraducir.setText("");
         txtTraducir.setEnabled(false);
         txtTraducir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

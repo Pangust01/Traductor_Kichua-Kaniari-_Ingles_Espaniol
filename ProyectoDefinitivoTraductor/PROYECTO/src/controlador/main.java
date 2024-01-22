@@ -85,6 +85,7 @@ public class main {
             loguin.getDatos().setText("Datos inexistentes...");
             loguin.getTxt1().setText("");
             loguin.getTxt2().setText("");
+
         }
 
     }
