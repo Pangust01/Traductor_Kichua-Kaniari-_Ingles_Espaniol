@@ -164,22 +164,8 @@ public class Traductor {
         traducciones.add("luz");
         traducciones.add("Ligth");
         traducciones.add("Achik");
-       
 
         diccionario.put("palabras", traducciones); // Traduce la oracion
-    }
-
-    // Traduce la oracion
-    public String traducirOracion(String idioma, String oracion) {
-        StringBuilder resultado = new StringBuilder("Traducción de la oración en " + idioma + ":\n");
-        String[] palabras = oracion.split("\\s+");
-
-        for (String palabra : palabras) {
-            String traduccion = traducirPalabra(idioma, palabra); // Instacia de la clase
-            resultado.append(traduccion).append("");
-        }
-
-        return resultado.toString();
     }
 
     public String traducirPalabra(String idioma, String palabra) { // obtiene la lista de traducciones
@@ -197,42 +183,4 @@ public class Traductor {
         }
     }
 
-    // public String traduccionPalabra(String idioma, String entrada) {
-    // Traductor miDiccionario = new Traductor();
-    // String significado = miDiccionario.traducirPalabra(idioma, entrada);
-    // return significado;
-    //
-    // }
-    // public static void main(String[] args) {
-    // Traductor miDiccionario = new Traductor();
-    // Scanner scanner = new Scanner(System.in);
-    //
-    // try {
-    // System.out.println("Idiomas disponibles: inglés, kichwa");
-    // System.out.println("Seleccione un idioma:");
-    // String idioma = scanner.nextLine().toLowerCase();
-    //
-    // if (!idioma.equals("ingles") && !idioma.equals("kichwa")) { // verifica si la
-    // variable idioma no es igual a
-    // // la cadena ingles
-    // System.out.println("Idioma no válido. Saliendo del programa.");
-    // return;
-    // }
-    //
-    // System.out.println("Ingrese una palabra o una oración para obtener su
-    // traducción: ");
-    // String entrada = scanner.nextLine();
-    //
-    // if (entrada.contains(" ")) { // Si la entrada contiene espacios es una
-    // oracion
-    // System.out.println(miDiccionario.traducirOracion(idioma, entrada));
-    // } else {
-    // String significado = miDiccionario.traducirPalabra(idioma, entrada);
-    // System.out.println("Su traduccion es: " + significado); // sinno contiene
-    // espacios es una palabra
-    // }
-    // } finally {
-    // scanner.close();
-    // }
-    // }
 }
