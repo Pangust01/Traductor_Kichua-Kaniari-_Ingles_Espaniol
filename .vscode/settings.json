@@ -1,9 +1,0 @@
-{
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Users\\Liber\\Documents\\NetBeansProjects\\lib\\edisoncorSX.jar",
-        "c:\\Users\\Liber\\Documents\\NetBeansProjects\\lib\\jcalendar-1.4.jar",
-        "c:\\Users\\x\\Documents\\lib\\edisoncorSX.jar",
-        "c:\\Users\\x\\Documents\\lib\\jcalendar-1.4.jar"
-    ]
-}
