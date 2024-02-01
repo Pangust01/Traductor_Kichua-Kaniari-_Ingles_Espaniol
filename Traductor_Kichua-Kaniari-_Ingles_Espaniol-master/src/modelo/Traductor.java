@@ -166,6 +166,36 @@ public class Traductor {
         traducciones.add("luz");
         traducciones.add("ligth");
         traducciones.add("achik");
+        traducciones.add("tejer");
+        traducciones.add("weave");
+        
+        traducciones.add("guerra");
+        traducciones.add("war");
+        
+        traducciones.add("reloj");
+        traducciones.add("clock");
+
+        traducciones.add("escuela");
+        traducciones.add("school");
+
+        traducciones.add("libro");
+        traducciones.add("book");
+
+        traducciones.add("pluma");
+        traducciones.add("feather");
+
+        traducciones.add("comida");
+        traducciones.add("food");
+
+        traducciones.add("desayuno");
+        traducciones.add("breakfast");
+
+        traducciones.add("crudo");
+        traducciones.add("raw");
+
+        traducciones.add("cosquillas");
+        traducciones.add("tickle");
+        
         diccionario.put("palabras", traducciones); // Traduce la palabra
     }
 
