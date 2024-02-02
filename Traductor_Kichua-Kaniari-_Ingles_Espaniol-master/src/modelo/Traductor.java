@@ -168,22 +168,22 @@ public class Traductor {
         traducciones.add("achik");
         traducciones.add("tejer");
         traducciones.add("weave");
-        
+        traducciones.add("awana");
         traducciones.add("guerra");
         traducciones.add("war");
-        
+        traducciones.add("makanakuy");
         traducciones.add("reloj");
         traducciones.add("clock");
-
+        traducciones.add("pachachik");
         traducciones.add("escuela");
         traducciones.add("school");
-
+        traducciones.add("yachana wasi");
         traducciones.add("libro");
         traducciones.add("book");
-
+        traducciones.add("kamu");
         traducciones.add("pluma");
         traducciones.add("feather");
-
+        traducciones.add("patpa");
         traducciones.add("comida");
         traducciones.add("food");
 
