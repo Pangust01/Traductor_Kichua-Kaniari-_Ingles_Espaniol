@@ -367,7 +367,7 @@ public class Traductor {
         traducciones.add("cazar");
         traducciones.add("hunt");
         traducciones.add("aychana");
-        traducciones.add("luciérnaga");
+        traducciones.add("luciernaga");
         traducciones.add("firefly");
         traducciones.add("aychañawi");
         traducciones.add("estafa");
@@ -400,7 +400,7 @@ public class Traductor {
         traducciones.add("cultivo");
         traducciones.add("cultivation");
         traducciones.add("chakra");
-        traducciones.add("insípido");
+        traducciones.add("insipido");
         traducciones.add("bland");
         traducciones.add("chamuk");
         traducciones.add("pierna");
@@ -427,7 +427,7 @@ public class Traductor {
         traducciones.add("allí");
         traducciones.add("there");
         traducciones.add("chaypi");
-        traducciones.add("todavía");
+        traducciones.add("todavia");
         traducciones.add("still");
         traducciones.add("chayra");
         traducciones.add("distinto");
