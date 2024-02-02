@@ -186,15 +186,14 @@ public class Traductor {
         traducciones.add("patpa");
         traducciones.add("comida");
         traducciones.add("food");
-
+        traducciones.add("mikuna");
         traducciones.add("desayuno");
         traducciones.add("breakfast");
-
+        traducciones.add("chinlli");
         traducciones.add("crudo");
         traducciones.add("raw");
-
-        traducciones.add("cosquillas");
-        traducciones.add("tickle");
+        traducciones.add("chawa");
+      
         
         diccionario.put("palabras", traducciones); // Traduce la palabra
     }
