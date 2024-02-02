@@ -280,6 +280,66 @@ public class Traductor {
         traducciones.add("caja");
         traducciones.add("box");
         traducciones.add("purunku");
+        traducciones.add("blando");
+        traducciones.add("ano");
+        traducciones.add("anus");
+        traducciones.add("siki utuku");
+        traducciones.add("teniente");
+        traducciones.add("lieutenant");
+        traducciones.add("kitilli apuk");
+        traducciones.add("pene");
+        traducciones.add("dick");
+        traducciones.add("puma ullu");
+        traducciones.add("primavera");
+        traducciones.add("spring");
+        traducciones.add("sisa");
+        traducciones.add("reir");
+        traducciones.add("laugh");
+        traducciones.add("asina");
+        traducciones.add("señorita");
+        traducciones.add("miss");
+        traducciones.add("kuytsa");
+        traducciones.add("machete");
+        traducciones.add("machete");
+        traducciones.add("kutana");
+        traducciones.add("macho");
+        traducciones.add("male");
+        traducciones.add("kari");
+        traducciones.add("menstruacion");
+        traducciones.add("menstruation");
+        traducciones.add("warmi unkuy");
+        traducciones.add("mesa");
+        traducciones.add("table");
+        traducciones.add("pataku");
+        traducciones.add("sesos");
+        traducciones.add("brains");
+        traducciones.add("ñunktu");
+        traducciones.add("sudor");
+        traducciones.add("sweat");
+        traducciones.add("jumpi");
+        traducciones.add("testiculo");
+        traducciones.add("testicle");
+        traducciones.add("lulun");
+        traducciones.add("tusa");
+        traducciones.add("corncob");
+        traducciones.add("kurunta");
+        traducciones.add("trabajar");
+        traducciones.add("work");
+        traducciones.add("llamkana");
+        traducciones.add("uva");
+        traducciones.add("grape");
+        traducciones.add("chiwilla");
+        traducciones.add("vagina");
+        traducciones.add("pussy");
+        traducciones.add("raka");
+        traducciones.add("trasero");
+        traducciones.add("ass");
+        traducciones.add("siki");
+        traducciones.add("cerdo");
+        traducciones.add("pig");
+        traducciones.add("kuchi");
+        
+
       
         
         diccionario.put("palabras", traducciones); // Traduce la palabra
