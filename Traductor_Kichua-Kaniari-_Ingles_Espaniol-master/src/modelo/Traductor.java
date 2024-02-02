@@ -716,7 +716,7 @@ public class Traductor {
         traducciones.add("kill");
         traducciones.add("wañuchina");
         traducciones.add("menor");
-        traducciones.add("minor");
+        traducciones.add("younger");
         traducciones.add("kipa");
         traducciones.add("negro");
         traducciones.add("black");
