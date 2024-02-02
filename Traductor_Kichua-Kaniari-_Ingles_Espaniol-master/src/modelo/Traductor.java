@@ -250,7 +250,36 @@ public class Traductor {
         traducciones.add("brazo");
         traducciones.add("arm");
         traducciones.add("rikra");
-        
+        traducciones.add("blando");
+        traducciones.add("soft");
+        traducciones.add("apilla");
+        traducciones.add("bobo");
+        traducciones.add("fool");
+        traducciones.add("upa");
+        traducciones.add("bravo");
+        traducciones.add("fierce");
+        traducciones.add("piñak");
+        traducciones.add("broma");
+        traducciones.add("joke");
+        traducciones.add("yankapukllay");
+        traducciones.add("brujo");
+        traducciones.add("wizard");
+        traducciones.add("shaman");
+        traducciones.add("bosque");
+        traducciones.add("forest");
+        traducciones.add("sacha");
+        traducciones.add("burlarse");
+        traducciones.add("mock");
+        traducciones.add("asipayana");
+        traducciones.add("cagar");
+        traducciones.add("poop");
+        traducciones.add("ismana");
+        traducciones.add("caer");
+        traducciones.add("fall");
+        traducciones.add("urmana");
+        traducciones.add("caja");
+        traducciones.add("box");
+        traducciones.add("purunku");
       
         
         diccionario.put("palabras", traducciones); // Traduce la palabra
