@@ -280,7 +280,6 @@ public class Traductor {
         traducciones.add("caja");
         traducciones.add("box");
         traducciones.add("purunku");
-        traducciones.add("blando");
         traducciones.add("ano");
         traducciones.add("anus");
         traducciones.add("siki utuku");
