@@ -658,7 +658,7 @@ public class Traductor {
         traducciones.add("desnutrido");
         traducciones.add("undernourished");
         traducciones.add("itsi");
-        traducciones.add("tío");
+        traducciones.add("tio");
         traducciones.add("uncle");
         traducciones.add("jachi");
         traducciones.add("arriba");
@@ -716,7 +716,7 @@ public class Traductor {
         traducciones.add("kill");
         traducciones.add("wañuchina");
         traducciones.add("menor");
-        traducciones.add("silvio");
+        traducciones.add("minor");
         traducciones.add("kipa");
         traducciones.add("negro");
         traducciones.add("black");
@@ -1195,9 +1195,6 @@ public class Traductor {
         traducciones.add("mascar");
         traducciones.add("chew");
         traducciones.add("mukuna");
-        traducciones.add("menor");
-        traducciones.add("younger");
-        traducciones.add("kipa");
         traducciones.add("montar");
         traducciones.add("ride");
         traducciones.add("sikana");
