@@ -1523,10 +1523,9 @@ public class Traductor {
         traducciones.add("brillante");
         traducciones.add("bright");
         traducciones.add("llimpik");
-        
+        traducciones.add("llimpik");
+        traducciones.add("llimpik");
 
-      
-        
         diccionario.put("palabras", traducciones); // Traduce la palabra
     }
 
@@ -1534,7 +1533,7 @@ public class Traductor {
         ArrayList<String> traducciones = diccionario.get("palabras");
         int indicePalabra = traducciones.indexOf(palabra.toLowerCase());
         for (int i = idPalabra; i <= indicePalabra; i += 3) {
-            
+
             if (indicePalabra == i) {
                 return true;
             }
@@ -1570,6 +1569,5 @@ public class Traductor {
         String cadenaNormalizada = Normalizer.normalize(cadena, Normalizer.Form.NFD);
         return cadenaNormalizada.replaceAll("[^\\p{ASCII}]", "");
     }
-
 
 }
